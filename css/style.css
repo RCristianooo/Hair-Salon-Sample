@@ -1,0 +1,210 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  height: 80px;
+  padding-top: 10px;
+  margin-left: 7.5%;
+}
+nav .fa-bars{
+  display: none;
+}
+nav *{
+  float: left;
+  padding-right: 25px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+nav > i, nav > a{
+  margin-top: 20px;
+}
+main{
+  background-color: white;
+  background-image: url("../img/salon_main.jpg");
+  background-repeat: no-repeat;
+  background-position: 10%;
+  
+  padding: 20% 40% 30% 10%;
+  font-size: 1.75em;
+  color: white;
+}
+main a{
+  text-decoration: none;
+  border: 30px solid black;
+  background: black;
+  color: white;
+}
+section.first section{
+  float: left;
+  margin-top: 7.5%;
+  width: 33.3333%;
+  height: 400px;
+  padding: 0 70px;
+  text-align: center;
+}
+section.second section{
+  background: #f3f4f6;
+  color: black;
+  float: left;
+  width: 40%;
+  padding-top: 7.5%;
+  padding-left: 12.5%;
+  height: 575px;
+  margin: 1;
+  font-size: 1.25em;
+}
+section.second section a{
+  text-decoration: none;
+  border: 15px solid black;
+  background: black;
+  color: white;
+}
+section.second section + section{
+  width: 60%;
+}
+section.third{
+  float: left;
+  background: white;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  margin-top: 5%;
+}
+section.third section{
+  padding-left: 12.5%;
+  width: 27%;
+  float: left;
+}
+hr{
+  width: 3%;
+  color: black;
+  size: 1%;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+section.third section h4, section.third section span{
+  margin-left: 40%;
+}
+section.fourth{
+  background: white;
+  float: left;
+  width: 100%;
+  height: 450px;
+  padding-left: 8%;
+  padding-top: 5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  background-image: url("../img/Promo-Banner-Image.jpg");
+  background-repeat: no-repeat;
+  font-size: 1.5em;
+}
+section.fourth a{
+  text-decoration: none;
+  border: 15px solid black;
+  background: black;
+  color: white;
+}
+section.fifth{
+  background: white;
+  float: left;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .hidden-mobile {
+    display: none;
+  }
+  nav .fa-bars{
+    display: block;
+  }
+  nav * {
+    padding-right: 15px;
+  }
+  nav > i, nav > a{
+    margin: 20px 0 5px
+  }
+  main{
+    padding: 0 10px;
+    font-size: 1.4em;
+  }
+  main a{
+    padding: 0;
+    border: 10px solid black;
+    margin-left: 35px
+  }
+  section.first {
+    float: left;
+    font-size: .9em;
+  }
+  section.first section {
+    width: 100%;
+    padding: 0 25px;
+    height: 270px;
+  }
+  section.second {
+    float: left;
+    font-size: .8em;
+  }
+  section.second section {
+    width: 100%;
+    height: 330px;
+  }
+  section.second section + section img {
+    width: 190%;
+  }
+  section.third{
+    float: left;
+  }
+  section.third section {
+    width: 100%;
+  }
+  section.third section img{
+    width: 75%;
+  }
+  section.third section h4, section.third section span{
+    margin-left: 0;
+  }
+  section.fourth {
+    height: 350px;
+    margin-top: 450px;
+    padding-left: 5%;
+    margin-left: 0;
+    font-size: 1.25em;
+  }
+  section.fifth img {
+    width: 60%;
+  }
+}
